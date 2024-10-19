@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.8">
   <diagram name="第 1 页" id="zVgg8zNp_NqGKC2zYAsy">
-    <mxGraphModel dx="823" dy="588" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="968" dy="692" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -53,6 +53,42 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="240" y="300" as="sourcePoint" />
             <mxPoint x="160" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rbnC-UON8SWdREh8G3_P-41" value="&lt;ol&gt;&lt;li&gt;原发器 （Originator） 类可以生成自身状态的快照， 也可以在需要时通过快照恢复自身状态。&lt;/li&gt;&lt;li&gt;备忘录 （Memento） 是原发器状态快照的值对象 （value object）。 通常做法是将备忘录设为不可变的， 并通过构造函数一次性传递数据。&lt;/li&gt;&lt;li&gt;负责人 （Caretaker） 仅知道 “何时” 和 “为何” 捕捉原发器的状态， 以及何时恢复状态。负责人通过保存备忘录栈来记录原发器的历史状态。 当原发器需要回溯历史状态时， 负责人将从栈中获取最顶部的备忘录， 并将其传递给原发器的恢复 （restoration） 方法。&lt;/li&gt;&lt;li&gt;在该实现方法中， 备忘录类将被嵌套在原发器中。 这样原发器就可访问备忘录的成员变量和方法， 即使这些方法被声明为私有。 另一方面， 负责人对于备忘录的成员变量和方法的访问权限非常有限： 它们只能在栈中保存备忘录， 而不能修改其状态。&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="40" y="190" width="620" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="rbnC-UON8SWdREh8G3_P-42" value="m = history.pop()&lt;div&gt;originator.restore(m)&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;" vertex="1" parent="1">
+          <mxGeometry x="680" y="85" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rbnC-UON8SWdREh8G3_P-43" value="m =&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;originator.save()&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;history.push(m)&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;" vertex="1" parent="1">
+          <mxGeometry x="680" y="147" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rbnC-UON8SWdREh8G3_P-44" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="597" y="137" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="rbnC-UON8SWdREh8G3_P-45" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1" source="rbnC-UON8SWdREh8G3_P-44" target="rbnC-UON8SWdREh8G3_P-42">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="440" as="sourcePoint" />
+            <mxPoint x="570" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rbnC-UON8SWdREh8G3_P-46" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="554" y="152" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="rbnC-UON8SWdREh8G3_P-47" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1" source="rbnC-UON8SWdREh8G3_P-46" target="rbnC-UON8SWdREh8G3_P-43">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="450" as="sourcePoint" />
+            <mxPoint x="580" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rbnC-UON8SWdREh8G3_P-48" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="450" y="430" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="rbnC-UON8SWdREh8G3_P-49" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1" source="rbnC-UON8SWdREh8G3_P-48">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="460" as="sourcePoint" />
+            <mxPoint x="590" y="430" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
