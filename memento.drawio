@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.8">
   <diagram name="第 1 页" id="zVgg8zNp_NqGKC2zYAsy">
-    <mxGraphModel dx="457" dy="327" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1176" dy="840" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -82,34 +82,37 @@
             <mxPoint x="580" y="420" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="rbnC-UON8SWdREh8G3_P-87" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=open;startFill=0;endArrow=open;endFill=0;" edge="1" parent="1" source="rbnC-UON8SWdREh8G3_P-53" target="rbnC-UON8SWdREh8G3_P-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="rbnC-UON8SWdREh8G3_P-53" value="Originator" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="62.5" y="557" width="160" height="100" as="geometry" />
+          <mxGeometry x="62.5" y="557" width="160" height="118" as="geometry" />
         </mxCell>
         <mxCell id="rbnC-UON8SWdREh8G3_P-54" value="- state" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="rbnC-UON8SWdREh8G3_P-53">
-          <mxGeometry y="26" width="160" height="26" as="geometry" />
+          <mxGeometry y="26" width="160" height="44" as="geometry" />
         </mxCell>
         <mxCell id="rbnC-UON8SWdREh8G3_P-55" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="rbnC-UON8SWdREh8G3_P-53">
-          <mxGeometry y="52" width="160" height="8" as="geometry" />
+          <mxGeometry y="70" width="160" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="rbnC-UON8SWdREh8G3_P-56" value="+ save(): Memento&lt;div&gt;+ restore(m: Memento)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="rbnC-UON8SWdREh8G3_P-53">
-          <mxGeometry y="60" width="160" height="40" as="geometry" />
+        <mxCell id="rbnC-UON8SWdREh8G3_P-56" value="+ save(): Memento&lt;div&gt;+ setState(state)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="rbnC-UON8SWdREh8G3_P-53">
+          <mxGeometry y="78" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="rbnC-UON8SWdREh8G3_P-57" value="ConcreteMemento" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="260" y="557" width="160" height="100" as="geometry" />
+          <mxGeometry x="260" y="557" width="220" height="118" as="geometry" />
         </mxCell>
-        <mxCell id="rbnC-UON8SWdREh8G3_P-58" value="- state" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="rbnC-UON8SWdREh8G3_P-57">
-          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        <mxCell id="rbnC-UON8SWdREh8G3_P-58" value="&lt;div&gt;- originator&lt;/div&gt;- state" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="rbnC-UON8SWdREh8G3_P-57">
+          <mxGeometry y="26" width="220" height="44" as="geometry" />
         </mxCell>
         <mxCell id="rbnC-UON8SWdREh8G3_P-59" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="rbnC-UON8SWdREh8G3_P-57">
-          <mxGeometry y="52" width="160" height="8" as="geometry" />
+          <mxGeometry y="70" width="220" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="rbnC-UON8SWdREh8G3_P-60" value="- ConcreteMemento(state)&lt;div&gt;- getState()&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="rbnC-UON8SWdREh8G3_P-57">
-          <mxGeometry y="60" width="160" height="40" as="geometry" />
+        <mxCell id="rbnC-UON8SWdREh8G3_P-60" value="- ConcreteMemento(originator, state)&lt;div&gt;- restore()&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="rbnC-UON8SWdREh8G3_P-57">
+          <mxGeometry y="78" width="220" height="40" as="geometry" />
         </mxCell>
         <mxCell id="rbnC-UON8SWdREh8G3_P-61" value="Caretaker" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="500" y="410" width="160" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="rbnC-UON8SWdREh8G3_P-62" value="- originator&lt;div&gt;- history: Memento[]&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="rbnC-UON8SWdREh8G3_P-61">
+        <mxCell id="rbnC-UON8SWdREh8G3_P-62" value="&lt;div&gt;- history: Memento[]&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="rbnC-UON8SWdREh8G3_P-61">
           <mxGeometry y="26" width="160" height="44" as="geometry" />
         </mxCell>
         <mxCell id="rbnC-UON8SWdREh8G3_P-63" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="rbnC-UON8SWdREh8G3_P-61">
@@ -118,11 +121,11 @@
         <mxCell id="rbnC-UON8SWdREh8G3_P-64" value="&lt;div&gt;+ undo()&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="rbnC-UON8SWdREh8G3_P-61">
           <mxGeometry y="78" width="160" height="42" as="geometry" />
         </mxCell>
-        <mxCell id="rbnC-UON8SWdREh8G3_P-67" value="&lt;ol&gt;&lt;li&gt;原发器 （Originator） 类可以生成自身状态的快照， 也可以在需要时通过快照恢复自身状态。&lt;/li&gt;&lt;li&gt;备忘录 （Memento） 是原发器状态快照的值对象 （value object）。 通常做法是将备忘录设为不可变的， 并通过构造函数一次性传递数据。&lt;/li&gt;&lt;li&gt;负责人 （Caretaker） 仅知道 “何时” 和 “为何” 捕捉原发器的状态， 以及何时恢复状态。负责人通过保存备忘录栈来记录原发器的历史状态。 当原发器需要回溯历史状态时， 负责人将从栈中获取最顶部的备忘录， 并将其传递给原发器的恢复 （restoration） 方法。&lt;/li&gt;&lt;li&gt;在该实现方法中， 备忘录类将被嵌套在原发器中。 这样原发器就可访问备忘录的成员变量和方法， 即使这些方法被声明为私有。 另一方面， 负责人对于备忘录的成员变量和方法的访问权限非常有限： 它们只能在栈中保存备忘录， 而不能修改其状态。&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="30" y="810" width="620" height="160" as="geometry" />
+        <mxCell id="rbnC-UON8SWdREh8G3_P-67" value="&lt;ol&gt;&lt;li&gt;这种实现方式允许存在多种不同类型的原发器和备忘录。 每种原发器都和其相应的备忘录类进行交互。 原发器和备忘录都不会将其状态暴露给其他类。&lt;br&gt;&lt;/li&gt;&lt;li&gt;负责人此时被明确禁止修改存储在备忘录中的状态。 但负责人类将独立于原发器， 因为此时恢复方法被定义在了备忘录类中。&lt;br&gt;&lt;/li&gt;&lt;li&gt;每个备忘录将与创建了自身的原发器连接。 原发器会将自己及状态传递给备忘录的构造函数。 由于这些类之间的紧密联系， 只要原发器定义了合适的设置器 （setter）， 备忘录就能恢复其状态。&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="40" y="770" width="620" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="rbnC-UON8SWdREh8G3_P-68" value="cm = (ConcreteMemento) m&lt;div&gt;state = cm.getState()&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;" vertex="1" parent="1">
-          <mxGeometry x="101.5" y="680" width="205" height="50" as="geometry" />
+        <mxCell id="rbnC-UON8SWdREh8G3_P-68" value="originator.setState(state)" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;" vertex="1" parent="1">
+          <mxGeometry x="241.25" y="710" width="167.5" height="50" as="geometry" />
         </mxCell>
         <mxCell id="rbnC-UON8SWdREh8G3_P-71" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1" source="rbnC-UON8SWdREh8G3_P-82" target="rbnC-UON8SWdREh8G3_P-68">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -136,19 +139,13 @@
             <mxPoint x="580" y="780" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rbnC-UON8SWdREh8G3_P-76" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Memento&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="rbnC-UON8SWdREh8G3_P-76" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Memento&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ restore()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="260" y="425.5" width="160" height="89" as="geometry" />
         </mxCell>
-        <mxCell id="rbnC-UON8SWdREh8G3_P-78" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1" source="rbnC-UON8SWdREh8G3_P-57" target="rbnC-UON8SWdREh8G3_P-76">
+        <mxCell id="rbnC-UON8SWdREh8G3_P-78" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.365;exitY=0.007;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="rbnC-UON8SWdREh8G3_P-57" target="rbnC-UON8SWdREh8G3_P-76">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="120" y="690" as="sourcePoint" />
-            <mxPoint x="280" y="690" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="rbnC-UON8SWdREh8G3_P-79" value="" style="endArrow=open;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1" source="rbnC-UON8SWdREh8G3_P-53" target="rbnC-UON8SWdREh8G3_P-57">
-          <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="170" y="700" as="sourcePoint" />
-            <mxPoint x="330" y="700" as="targetPoint" />
+            <mxPoint x="340" y="550" as="sourcePoint" />
+            <mxPoint x="340" y="514.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="rbnC-UON8SWdREh8G3_P-80" value="" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="rbnC-UON8SWdREh8G3_P-61" target="rbnC-UON8SWdREh8G3_P-76">
@@ -158,7 +155,22 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="rbnC-UON8SWdREh8G3_P-82" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="199" y="640" width="10" height="10" as="geometry" />
+          <mxGeometry x="320" y="659" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="rbnC-UON8SWdREh8G3_P-84" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;Originator&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ save(m: Memento)&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="62.5" y="425.5" width="160" height="89" as="geometry" />
+        </mxCell>
+        <mxCell id="rbnC-UON8SWdREh8G3_P-85" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1" source="rbnC-UON8SWdREh8G3_P-53" target="rbnC-UON8SWdREh8G3_P-84">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="350" y="567" as="sourcePoint" />
+            <mxPoint x="350" y="525" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rbnC-UON8SWdREh8G3_P-86" value="" style="endArrow=open;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="1" source="rbnC-UON8SWdREh8G3_P-84" target="rbnC-UON8SWdREh8G3_P-76">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="233" y="617" as="sourcePoint" />
+            <mxPoint x="270" y="617" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
