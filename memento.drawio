@@ -85,7 +85,7 @@
         <mxCell id="rbnC-UON8SWdREh8G3_P-87" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=open;startFill=0;endArrow=open;endFill=0;endSize=12;startSize=12;" edge="1" parent="1" source="rbnC-UON8SWdREh8G3_P-53" target="rbnC-UON8SWdREh8G3_P-57">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="rbnC-UON8SWdREh8G3_P-53" value="Originator" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="rbnC-UON8SWdREh8G3_P-53" value="ConcreteOriginator" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="62.5" y="557" width="160" height="118" as="geometry" />
         </mxCell>
         <mxCell id="rbnC-UON8SWdREh8G3_P-54" value="- state" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="rbnC-UON8SWdREh8G3_P-53">
